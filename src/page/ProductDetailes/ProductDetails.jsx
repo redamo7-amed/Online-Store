@@ -4,6 +4,7 @@ import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6";
 import { TiShoppingCart } from "react-icons/ti";
 import { FaRegHeart, FaShare } from "react-icons/fa";
 import SlideProduct  from "../../components/slideProduct/SlideProduct";
+import Loader from "../../components/LoaderPage/Loader";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -42,7 +43,7 @@ const ProductDetails = () => {
   },[product?.category])
 
 
-  if (loading) return <p>Loading....</p>;
+  if (loading) return <Loader/>;
   if (!product) return <p>Product not found</p>;
 
   return (
