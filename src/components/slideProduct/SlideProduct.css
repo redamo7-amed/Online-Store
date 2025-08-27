@@ -116,6 +116,7 @@
 
 .product.added .icons .added-cart{
     background: var(--main_color);
+    pointer-events: none;
 
 }
 .product.added .icons .added-cart svg{

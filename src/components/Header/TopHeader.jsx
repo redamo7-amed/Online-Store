@@ -7,11 +7,8 @@ import { TiShoppingCart } from "react-icons/ti";
 import { useContext } from "react";
 import { CartContext } from "../../components/Context/CartContext";
 
-
 function TopHeader() {
-
-  const {cartItems} = useContext(CartContext);
-
+  const { cartItems } = useContext(CartContext);
 
   return (
     <>
@@ -46,11 +43,12 @@ function TopHeader() {
               </span>
             </div>
             <div className="icon relative cursor-pointer ">
-              <TiShoppingCart className="text-[30px]" />
-              <span className="count absolute top-[-5px] right-[-10px] bg-main text-whitee text-[12px] w-[20px] h-[20px] rounded-full flex justify-center items-center">
-                {cartItems.length}
-
-              </span>
+              <Link to="/cart">
+                <TiShoppingCart className="text-[30px]" />
+                <span className="count absolute top-[-5px] right-[-10px] bg-main text-whitee text-[12px] w-[20px] h-[20px] rounded-full flex justify-center items-center">
+                  {cartItems.length}
+                </span>
+              </Link>
             </div>
           </div>
         </div>
