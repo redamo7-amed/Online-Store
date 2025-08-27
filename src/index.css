@@ -23,6 +23,7 @@
 body{
     background: #FFF;
     font-family: "Inter", sans-serif;
+    padding-top: 150px;
 }
 
 img{
@@ -90,4 +91,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.added{
 }

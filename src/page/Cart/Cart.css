@@ -1,0 +1,10 @@
+.checkout .items .item-cart .name-of-item{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    }
+
+    .checkout .items .item-cart:last-child{
+        border-bottom: 0;
+    }

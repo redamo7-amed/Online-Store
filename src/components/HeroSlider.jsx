@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const HeroSlider = () => {
   return (
     <>
-      <div className="hero relative mb-[80px] pt-5">
+      <div className="hero relative mb-[80px] pt-5 ">
         <div className="container">
           <Swiper
           loop={true}
