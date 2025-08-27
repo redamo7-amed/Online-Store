@@ -7,7 +7,7 @@ import ProductDetail from "./page/ProductDetailes/ProductDetails";
 function App() {
   return (
     <>
-      <header>
+      <header className="fixed right-0 left-0 top-0 bg-whitee z-[10000]">
         <TopHeader />
         <BtmHeader />
       </header>

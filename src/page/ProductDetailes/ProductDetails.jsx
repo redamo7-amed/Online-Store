@@ -57,7 +57,7 @@ const ProductDetails = () => {
           </div>
           <div className="sm-items  flex justify-between items-center  cursor-pointer">
             {product.images.map((img, index) => (
-              <div className="w-[24%] flex justify-center items-center">
+              <div key={index} className="w-[24%] flex justify-center items-center">
 
                 <img
                   className="w-auto max-h-[150px] object-cover"

@@ -84,6 +84,7 @@
 }
 
 .product .icons{
+    z-index: 100;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -113,4 +114,32 @@
     text-transform: capitalize;
 }
 
+.product.added .icons .added-cart{
+    background: var(--main_color);
 
+}
+.product.added .icons .added-cart svg{
+    fill: var(--white_color);
+}
+
+.product .status-cart{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.product .status-cart svg{
+    color: rgb(44, 225, 3);
+}
+
+
+.product.added .status-cart{
+    top: 10px;
+}
